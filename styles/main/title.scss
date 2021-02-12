@@ -1,0 +1,244 @@
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.title {
+  position: relative;
+  width: 100%;
+  height: 800px;
+
+  background: url(../../assets/bg-menu.png) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .container {
+    display: flex;
+    height: 800px;
+    flex-wrap: wrap;
+  }
+
+  &__wrapper {
+    width: 100%;
+    padding: 53px 0;
+    overflow: hidden;
+  }
+  &__inner {
+    text-align: left;
+    width: 100%;
+
+    .col-md-6 {
+      z-index: 12;
+      .log-wrapper {
+        width: 100%;
+        text-align: center;
+        margin-top: 45px;
+        .log-inner {
+          width: 31%;
+          margin: 0 auto;
+          position: relative;
+          left: -9%;
+          img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      h1 {
+        z-index: 1;
+        position: relative;
+        display: inline-block;
+        font-size: 52px;
+        margin: 0;
+        font-weight: 300;
+        color: #fff;
+        margin-top: 53px;
+        padding-right: 0px;
+        line-height: 1.5;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .text-main {
+        p {
+          font-size: 14px;
+          color: rgba(255, 255, 255, 0.73);
+          padding-right: 70px;
+
+          margin-bottom: 25px;
+          margin: 0 0 20px;
+          line-height: 1.875;
+        }
+
+        .text-desk {
+          display: block;
+          margin-top: 20px;
+        }
+        .text-mob {
+          display: none;
+        }
+
+        .buttons {
+          margin-top: 75px;
+          text-align: inherit;
+
+          .btn {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            display: inline-block;
+            padding: 9.5px 15px;
+            border: 1px solid #a5a5a5;
+            color: #fff;
+            font-size: 14px;
+            -webkit-transition: all ease 0.238s;
+            -moz-transition: all ease 0.238s;
+            transition: all ease 0.238s;
+            border-radius: 3px;
+
+            &:hover {
+              outline: 0;
+              background-color: rgba(0, 0, 0, 0.9);
+              color: #0d0f13;
+            }
+
+            &::before {
+              color: #0d0f13;
+              content: "";
+              left: auto;
+              top: 0;
+              right: 0;
+              height: 100%;
+              width: 0;
+              position: absolute;
+              transition: all 300ms ease;
+              z-index: -1;
+              background-color: #eeeeed;
+            }
+
+            &:hover::before {
+              left: 0;
+              right: auto;
+              width: 100%;
+            }
+          }
+          .reserv-btn {
+            margin-right: 60px;
+          }
+          .outline {
+            background-color: transparent;
+            border-color: #eeeeed;
+            color: #eeeeed;
+            transition: all 0.8s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+            display: inline-block;
+            outline: medium none;
+            position: relative;
+            z-index: 1;
+          }
+        }
+      }
+    }
+
+    .bg-desk {
+      display: block;
+      top: 0;
+      right: 0;
+      position: absolute;
+      z-index: 10;
+
+      img {
+        height: 800px;
+      }
+    }
+
+    .rhombus {
+      position: absolute;
+      left: 26%;
+      z-index: 34;
+      width: 250px;
+      top: 725px;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .bg-mob {
+      display: none;
+    }
+    .bg-tab {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    .container {
+      max-width: 1200px;
+    }
+  }
+}
+
+@media only screen and(max-width: 1200px) {
+  .title {
+    &__inner {
+      .col-md-6 {
+        h1 {
+          font-size: 42px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 991px) {
+  .title {
+    height: 750px;
+    background: url(../../assets/bg-main-tab.png) center center;
+
+    &__inner {
+      .col-md-6 {
+        max-width: 70%;
+        .log-wrapper {
+          .log-inner {
+            width: 80%;
+            padding-right: 30%;
+            img {
+              width: 138px !important;
+              height: 54px;
+            }
+          }
+        }
+        h1{
+          font-size: 32px;
+          padding-right: 20%;
+        }
+        .text-main{
+
+          .text-desk{
+            padding-right: 30%;
+          }
+        }
+      }
+
+      .bg-desk {
+        display: none;
+      }
+      .bg-tab {
+        display: block;
+
+        position: absolute;
+        top: 0;
+        width: 350px;
+        right: 0;
+      }
+      .rhombus {
+        left: 30%;
+        width: 200px;
+        top: 690px;
+      }
+    }
+  }
+}
