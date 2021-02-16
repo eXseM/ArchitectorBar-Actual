@@ -8,7 +8,7 @@
         <div class="pap-cer">
           <img src="../../assets/pap-cer.png" alt="" />
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 text-block">
           <div class="question">
             <img src="../../assets/question.png" alt="" />
           </div>
@@ -17,7 +17,7 @@
           <h2 class="title-mob2">Архитектор</h2>
           <h2 class="title-black">Кто <span>такой</span> Архитектор</h2>
           <div class="spacer3"></div>
-          <div class="ligbl-mob"></div>
+          <div class="ligbl-mob"><img src="../../assets/ligbl-mob.svg" alt=""></div>
         </div>
         <div class="col-md-5">
           <div class="about-text">

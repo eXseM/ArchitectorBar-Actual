@@ -1,5 +1,5 @@
 <template>
-  <div class="reservation wprt-section2">
+  <div class="reservation wprt-section2" id="reserved">
     <div class="blgl">
       <div class="container">
         <div class="row">
@@ -68,7 +68,7 @@
                       >
                     </select>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 last">
                     <p class="dtp">Количество персон</p>
                     <input
                       type="text"
