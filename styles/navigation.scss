@@ -1,0 +1,325 @@
+//animation for mobile menu
+
+.slide-enter {
+  position: absolute;
+  top: -600px;
+  left: 0;
+}
+.slide-enter-to {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.slide-leave {
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+.slide-leave-to {
+  position: absolute;
+  left: 0;
+  top: -600px;
+}
+
+//animation for mobile menu
+
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(13, 15, 19, 0.95);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: montserrat, serif;
+  z-index: 99999;
+
+  &__wrapper {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+
+    .menu-main {
+      display: flex;
+      //background: #ffffff;
+      width: 30%;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      margin-left: 35px;
+
+      &__item {
+        padding-right: 35px;
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 500;
+          color: rgba(255, 255, 255, 0.3);
+          text-transform: uppercase;
+        }
+        a.nuxt-link-exact-active {
+          color: #fff;
+          font-weight: 500;
+        }
+      }
+    }
+    .menu-mob {
+      display: none;
+    }
+    .social {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 20%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: flex-end;
+      align-items: center;
+
+      div {
+        padding-left: 25px;
+
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .nav {
+    .container {
+      max-width: 1200px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .nav {
+    .container {
+      width: 970px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .nav {
+    &__wrapper {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav {
+    &__wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .nav {
+    &__wrapper {
+      height: 50px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .nav {
+    width: 100%;
+    height: 50px;
+    &__wrapper {
+      width: 100%;
+      .menu-main {
+        display: none;
+      }
+      .logo {
+        margin-top: -2px;
+        width: 26px;
+        height: 22px;
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      .social {
+        display: none;
+      }
+      .menu-mob {
+        display: block;
+        width: 100%;
+
+        .btn-menu {
+          color: #565656;
+          padding: 13px 7px 7px 7px;
+          position: relative;
+          cursor: pointer;
+          transition: top 0.23s;
+          z-index: 44;
+          width: 3px;
+          left: 46%;
+          margin: 0 auto;
+          transform: rotate(360deg);
+
+          span {
+            display: block;
+            height: 24px;
+            background: url(../assets/arrow_menu.png) center center;
+            background-size: cover;
+            margin-top: -15px;
+            width: 3px;
+            transition: all 0.15s linear 0.23s;
+          }
+        }
+        .activeMenu {
+          display: block;
+          position: fixed;
+          list-style: none;
+          padding: 10px;
+          height: 400px;
+          margin: 0;
+          z-index: 43;
+          box-sizing: border-box;
+          width: 100%;
+          background-color: rgba(13, 15, 19, 0.95);
+          top: 49px;
+          left: 0;
+          transition: top 0.23s;
+
+          .pd-menu {
+            padding-top: 20px;
+            border-top: 1px solid #707070;
+
+            a {
+              margin-left: 30px;
+              color: #fff;
+              display: block;
+              font-size: 18px;
+              text-decoration: none;
+              margin-top: 3px;
+            }
+
+            .adres {
+              color: #fff;
+              margin: auto;
+            }
+            .soc-add {
+              margin: 30px auto;
+              width: 35%;
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+            p {
+              font-size: 12px;
+              color: #fff;
+              margin-left: 90px;
+            }
+          }
+
+          .btn-menu{
+            color: #565656;
+            padding: 13px 7px 7px 7px;
+            position: relative;
+            cursor: pointer;
+            transition: top 0.23s;
+            z-index: 44;
+            width: 3px;
+            left: 49%;
+            margin: 0 auto;
+            transform: rotate(360deg);
+
+            span {
+              display: block;
+              height: 24px;
+              background: url(../assets/arrow_menu.png) center center;
+              background-size: cover;
+              width: 3px;
+              transition: all 0.15s linear 0.23s;
+              position: relative;
+              transform: rotate(180deg);
+            }
+          }
+
+          li {
+            font-size: 18px;
+            line-height: 1.86em;
+            padding: 0.26em 30px;
+
+            a {
+              color: #fff;
+              text-decoration: none;
+              outline: 0;
+            }
+          }
+        }
+        .hideMenu {
+          display: block;
+          position: fixed;
+          top: -600px;
+          left: 0;
+          transition: all 0.23s;
+          list-style: none;
+          padding: 10px;
+          margin: 0;
+          z-index: 43;
+          box-sizing: border-box;
+          width: 100%;
+          background-color: rgba(13, 15, 19, 0.95);
+
+          .pd-menu {
+            padding-top: 20px;
+            border-top: 1px solid #707070;
+
+            a {
+              margin-left: 30px;
+              color: #fff;
+              display: block;
+              font-size: 18px;
+              text-decoration: none;
+              margin-top: 3px;
+            }
+
+            .adres {
+              color: #fff;
+              margin: auto;
+            }
+            .soc-add {
+              margin: 30px auto;
+              width: 35%;
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+            p {
+              font-size: 12px;
+              color: #fff;
+              margin-left: 100px;
+            }
+          }
+
+          a {
+            color: #fff !important;
+            text-decoration: none;
+            outline: 0;
+          }
+          li {
+            font-size: 18px;
+            line-height: 1.86em;
+            padding: 0.26em 30px;
+          }
+        }
+      }
+    }
+  }
+}

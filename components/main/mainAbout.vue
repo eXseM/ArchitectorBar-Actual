@@ -6,18 +6,18 @@
           <div class="spacer"></div>
         </div>
         <div class="pap-cer">
-          <img src="../../assets/pap-cer.png" alt="" />
+          <img src="../../assets/pap-cer.webp" alt="" />
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 text-block">
           <div class="question">
-            <img src="../../assets/question.png" alt="" />
+            <img src="../../assets/question.webp" alt="" />
           </div>
           <div class="circle-black"></div>
           <h2 class="title-mob">Кто <span>такой</span></h2>
           <h2 class="title-mob2">Архитектор</h2>
           <h2 class="title-black">Кто <span>такой</span> Архитектор</h2>
           <div class="spacer3"></div>
-          <div class="ligbl-mob"></div>
+          <div class="ligbl-mob"><img src="../../assets/ligbl-mob.svg" alt=""></div>
         </div>
         <div class="col-md-5">
           <div class="about-text">
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="archi">
-          <img src="../../assets/archi_desk.gif" alt="" />
+          <img src="../../assets/archiDesk.gif" alt="" />
         </div>
         <div class="col-md-4 ar-height">
           <div class="quota">
@@ -60,19 +60,19 @@
           <img src="../../assets/ligbl.svg" alt="" />
         </div>
         <div class="cokt">
-          <img src="../../assets/cokt.png" alt="" />
+          <img src="../../assets/cokt.webp" alt="" />
         </div>
         <div class="lg-line">
           <img src="../../assets/lg-line.svg" alt="" />
         </div>
         <div class="cokt-tab">
-          <img src="../../assets/cokt-tab.png" alt="" />
+          <img src="../../assets/cokt-tab.webp" alt="" />
         </div>
         <div class="delta">
-          <img src="../../assets/delta.png" alt="" />
+          <img src="../../assets/delta.webp" alt="" />
         </div>
         <div class="watlog">
-          <img src="../../assets/watlog.png" alt="" />
+          <img src="../../assets/watlog.webp" alt="" />
         </div>
         <div class="col-md-12">
           <div class="spacer2"></div>

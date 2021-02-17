@@ -1,12 +1,17 @@
 <template>
     <div>
-        <h1>Delivery</h1>
+        <delivery-v />
     </div>
 </template>
 
 <script>
+
+import deliveryV from '~/components/delivery/deliveryV.vue'
+
     export default {
-        
+        components:{
+            deliveryV
+        }
     }
 </script>
 
