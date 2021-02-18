@@ -2,6 +2,7 @@
   <div>
     <navbar />
     <Nuxt />
+    <to-top />
     <footer-main />
   </div>
 </template>
@@ -9,11 +10,13 @@
 <script>
 import navbar from "~/components/navbar.vue";
 import footerMain from '~/components/footer-main.vue';
+import ToTop from '~/components/toTop.vue';
 
 export default {
   components: {
     navbar,
-    footerMain
+    footerMain,
+    ToTop
   },
 };
 </script>
