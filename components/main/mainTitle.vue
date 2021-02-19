@@ -3,7 +3,7 @@
     <div class="container">
       <div class="title__wrapper">
         <div class="title__inner">
-          <div class="bg-mob"><img src="../../assets/wok-mob.png" alt="" /></div>
+          <div class="bg-mob"><img src="../../assets/wok-mob.webp" alt="" /></div>
           <div class="col-md-6">
             <div class="log-wrapper">
               <div class="log-inner image-wrap">
@@ -23,15 +23,15 @@
                 атмосферными вечеринками, расположенный в самом сердце города.
               </p>
               <div class="buttons">
-                <a href="#" class="btn reserv-btn outline"
-                  >Забронировать стол</a
+                <nuxt-link to="#reserved" class="btn reserv-btn outline"
+                  >Забронировать стол</nuxt-link
                 >
-                <a href="#" class="btn outline">Оформить доставку</a>
+                <nuxt-link to="/menu" class="btn outline">Оформить доставку</nuxt-link>
               </div>
             </div>
           </div>
-          <div class="bg-desk"><img src="../../assets/wok-desk.png" alt="" /></div>
-          <div class="bg-tab"><img src="../../assets/wok-tab.png" alt="" /></div>
+          <div class="bg-desk"><img src="../../assets/wok-desk.webp" alt="" /></div>
+          <div class="bg-tab"><img src="../../assets/wok-tab.webp" alt="" /></div>
           <div class="rhombus"><img src="../../assets/rhombus.svg" alt="" /></div>
         </div>
       </div>
