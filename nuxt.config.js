@@ -23,7 +23,12 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '@/plugins.js'
+    '@/plugins/plugins.js',
+    { src: '@/plugins/VueFlickity.js', ssr: false },
+    { src: '@/plugins/VueMask.js', ssr: false},
+    { src: '@/plugins/DatePicker.js', ssr: false},
+    { src: "@/plugins/vClickOutside", ssr: false },
+    { src: "@/plugins/VueSocial.js", ssr: false},
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -39,7 +44,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    'vue-social-sharing/nuxt'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

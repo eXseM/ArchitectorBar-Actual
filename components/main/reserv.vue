@@ -1,5 +1,5 @@
 <template>
-  <div class="reservation wprt-section2">
+  <div class="reservation wprt-section2" id="reserved">
     <div class="blgl">
       <div class="container">
         <div class="row">
@@ -36,25 +36,28 @@
                   </div>
                   <div class="col-md-4">
                     <p class="dtp">Телефон</p>
-                    <input
-                      type="text"
+                    <client-only> 
+                    <masked-input
+                      mask="\+\7 (111) 111-11-11"
                       placeholder="Ваш телефон"
-                      id="telephone"
-                      name="phone"
+                      @input="rawVal = arguments[1]"
                       class="res_input"
                       required
                     />
+                    </client-only>
                   </div>
                   <div class="col-md-4">
                     <p class="dtp">Дата</p>
-                    <input
-                      type="text"
-                      name="date"
-                      id="datepicker"
-                      placeholder="Укажите дату"
-                      class="res_input hasDatepicker"
-                      required
-                    />
+                    <client-only>
+                      <datepicker
+                        v-model="date"
+                        class="res_input datePicker"
+                        placeholder="Укажите дату"
+                        :language="ru"
+                        required
+                        @input="onDate"
+                      ></datepicker>
+                    </client-only>
                   </div>
                   <div class="col-md-4">
                     <p class="dtp">Время</p>
@@ -68,10 +71,10 @@
                       >
                     </select>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-4 last">
                     <p class="dtp">Количество персон</p>
                     <input
-                      type="text"
+                      type="number"
                       name="persones"
                       placeholder="Укажите число"
                       required
@@ -94,6 +97,8 @@
 </template>
 
 <script>
+import { ru } from "vuejs-datepicker/dist/locale";
+
 export default {
   components: {},
   data() {
@@ -110,15 +115,20 @@ export default {
         { time: "20:00" },
         { time: "21:00" },
         { time: "22:00" },
-        { time: "23:00" },
-      ]
+        { time: "23:00" }
+      ],
+      date: null,
+      ru: ru,
     };
-  }
+  },
+  methods:{
+    onDate(){
+      let reservDate = new Date(this.date).toLocaleDateString();
+    }
+  },
 };
 </script>
 
-<style lang="scss" scoped>
-
-@import 'styles/main/reserv.scss'
-
+<style lang="scss">
+@import "styles/main/reserv.scss";
 </style>

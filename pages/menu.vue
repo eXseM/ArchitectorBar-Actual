@@ -1,11 +1,13 @@
 <template>
     <div>
-        <h1>Menu</h1>
+        <slider />
     </div>
 </template>
 
 <script>
+import slider from '~/components/menu/slider.vue'
     export default {
+  components: { slider },
         
     }
 </script>

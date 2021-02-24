@@ -12,6 +12,7 @@ img {
 .about {
   position: relative;
   background-color: #eeeeed;
+  width: 100%;
 
   .container {
     .col-md-12 {
@@ -116,6 +117,10 @@ img {
       width: 370px;
       right: 25%;
       top: 220px;
+
+      img{
+        width: 110%;
+      }
     }
     .ar-height {
       height: 590px;
@@ -217,7 +222,7 @@ img {
     .container {
       .row {
         .col-md-12 {
-          .question{
+          .question {
             top: -60px;
             left: 54.5%;
           }
@@ -225,17 +230,235 @@ img {
             left: 7%;
           }
         }
-        .cokt{
+        .cokt {
           width: 300px;
           right: 4%;
         }
-        .archi{
+        .archi {
           width: 350px;
           right: 25%;
           top: 250px;
         }
-        .pap-cer{
+        .pap-cer {
           left: -400px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 991px) {
+  .about {
+    .container {
+      .row {
+        .pap-cer {
+          left: -240px;
+          width: 294px;
+          top: -155px;
+        }
+        .col-md-12 {
+          .spacer {
+            height: 100px;
+          }
+          .question {
+            top: -40px;
+            left: 50%;
+            width: 54px;
+          }
+          .circle-black {
+            left: 10.7%;
+            width: 18px;
+            height: 18px;
+            top: 14px;
+          }
+          .title-black {
+            display: block;
+            color: #0d0f13;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 10px;
+            font-size: 32px;
+            padding-left: 4%;
+            margin-left: 0;
+          }
+        }
+        .col-md-5 {
+          min-width: 100%;
+          .about-text {
+            padding-left: 4%;
+            width: 360px;
+            height: 361px;
+          }
+        }
+        .ar-height {
+          height: 200px;
+          min-width: 100%;
+
+          .quota {
+            font-size: 14px;
+            width: 300px;
+            right: 7%;
+            top: 0;
+          }
+        }
+
+        .ligbl {
+          display: none;
+        }
+        .lg-line {
+          display: none;
+        }
+        .cokt {
+          display: none;
+        }
+        .delta {
+          display: block;
+          bottom: 0;
+        }
+        .archi {
+          width: 240px;
+          right: 7%;
+          top: 120px;
+        }
+        .cokt-tab {
+          display: block;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width: 768px) {
+  .about {
+    .container {
+      .row {
+        .col-md-12 {
+          .question {
+            left: 373px;
+          }
+          .circle-black{
+            left: 11.4%;
+            width: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+}
+@media only screen and (max-width: 540px) {
+}
+@media only screen and (max-width: 640px) {
+  .about {
+    width: 100%;
+    .container {
+      .row {
+        display: unset;
+        .pap-cer {
+          left: -150px;
+          width: 193px;
+          top: -105px;
+        }
+        .col-md-12 {
+          .question {
+            left: 198px;
+            top: 2px;
+            width: 35px;
+          }
+          .title-mob {
+            display: block;
+            font-size: 24px;
+            color: #0d0f13;
+            font-weight: 400;
+            padding-left: 15px;
+            margin-bottom: 0px;
+          }
+          .title-mob2 {
+            display: block;
+            margin-bottom: 10px;
+            line-height: normal;
+            font-size: 24px;
+            color: #0d0f13;
+            font-weight: 400;
+            padding-left: 65px;
+          }
+          .title-black {
+            display: none;
+          }
+          .spacer3{
+            height: 25px;
+          }
+          .ligbl-mob {
+            display: block;
+          }
+          .circle-black {
+            left: 58px;
+            width: 13px;
+            height: 13px;
+            top: 10px;
+          }
+          .spacer2{
+            height: 65px;
+          }
+        }
+        .col-md-5{
+          .about-text{
+            padding-left: 0;
+            width: 100%;
+            text-align: center;
+
+            p{
+              color: #000;
+            }
+          }
+        }
+        .col-md-4{
+          .quota{
+            width: 260px;
+            right: 30px;
+            margin: 0 auto;
+            margin-top: 30px;
+            top: 0;
+            font-size: 12px;
+            position: relative;
+          }
+        }
+        .ligbl{
+          display: none;
+        }
+        .archi {
+          width: 70%;
+          right: 0;
+          top: 0;
+          margin: 0 auto;
+          position: relative;
+          margin-top: 15px;
+        }
+        .cokt-tab{
+          position: relative;
+          width: 200px;
+          bottom: -10px;
+          z-index: 3;
+          left: 0;
+          margin: 0 auto;
+        }
+        .delta{
+          position: relative;
+          width: 180px;
+          bottom: 130px;
+          left: 0;
+          margin: 0 auto;
+          height: 40px;
+        }
+        .watlog{
+          width: 250px;
+          left: -120px;
+          bottom: 255px;
+          height: 0px;
+          position: relative;
         }
       }
     }
